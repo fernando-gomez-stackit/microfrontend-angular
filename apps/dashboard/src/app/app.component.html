@@ -1,0 +1,6 @@
+<div *ngIf="isLoggedIn$ | async; else signIn">
+  <ng-mf-navbar></ng-mf-navbar>
+</div>
+<ng-template #signIn>
+  <router-outlet></router-outlet>
+</ng-template>

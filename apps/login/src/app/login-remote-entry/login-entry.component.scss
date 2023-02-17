@@ -1,0 +1,34 @@
+.container-fluid {
+  background-image: url('/assets/img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-app {
+  position: relative;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.login-form {
+  position: absolute;
+  width: 500px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.alert.alert-danger {
+  margin: auto;
+  max-width: 500px;
+}
+
+img {
+  width: 40px;
+}

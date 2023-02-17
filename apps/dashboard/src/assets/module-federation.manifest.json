@@ -1,0 +1,6 @@
+{
+  "login": "http://localhost:4201",
+  "home": "http://localhost:4202",
+  "orders": "http://localhost:4203",
+  "customers": "http://localhost:4204"
+}

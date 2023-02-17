@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="login-app">
+        <form class="login-form" (ngSubmit)="login()">
+
+          <h3>
+            <img src="https://avatars.slack-edge.com/2022-03-09/3217267358914_1e64d2d99b08842f09e1_88.png" alt="">
+            Sign in
+          </h3>
+
+          <label> Username:</label>
+          <input
+            type="text"
+            name="username"
+            [(ngModel)]="username"
+            class="form-control"
+            placeholder="example@example.com"
+          />
+
+          <label> Password:</label>
+          <input
+            type="password"
+            name="password"
+            [(ngModel)]="password"
+            class="form-control"
+            placeholder="*********"
+          />
+          <hr>
+          <button type="submit" class="btn btn-dark w-100">Login</button>
+        </form>
+        <div class="alert alert-danger mt-3" *ngIf="!isValid">
+          The entered credentials are not correct!.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
